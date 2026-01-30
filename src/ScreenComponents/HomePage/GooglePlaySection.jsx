@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from '../../assets/iphone 16 Pro.png'
+import image1 from '../../assets/Playstore.svg'
 import playstoreImage from '../../assets/Playstore.svg'
 
 const GooglePlaySection = () => {
