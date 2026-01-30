@@ -1,0 +1,359 @@
+.cartDiv {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+
+    .cartFirstDiv {
+        padding: 26px 46px;
+        border-radius: 10px;
+        border: 0.5px solid var(--Line, #D9D9D9);
+        background: var(--Dark-bg, #FFF);
+
+        .cartFirstDivHeading {
+            color: var(--Text-Primary, #282828);
+            font-family: "Barlow Condensed";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+        }
+
+        .cartHorizontalGap {
+            margin-top: 26px;
+            margin-bottom: 26px;
+        }
+
+        .cartTotalText {
+            color: var(--Secondary-lighter, #939393);
+            font-family: "Barlow Condensed";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .cartItemsDiv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cartItemsFirstDiv {
+            display: flex;
+            gap: 46px;
+        }
+
+        .cartImgDiv {
+            width: 192px;
+            height: 134px;
+            border-radius: 10px;
+            border: 0.5px solid var(--Line, #D9D9D9);
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.10);
+        }
+
+        .cartCountInnerDiv {
+            width: 192px;
+
+        }
+
+        .cartProductTitle {
+            color: var(--Text-Primary, #282828);
+            font-family: "Barlow Condensed";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        .cartCountDiv {
+            display: flex;
+            padding: 4px 10px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 120px;
+
+            border: 0.5px solid var(--Secondary-lighter, #939393);
+        }
+
+        .cartCount {
+            color: var(--Text-Primary, #282828);
+            font-family: "Barlow Condensed";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .cartItemsSecDiv {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cartProductPrice {
+            color: var(--Text-Primary, #282828);
+            font-family: "Barlow Condensed";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .cartRemoveText {
+            color: #000;
+            font-family: "Barlow Condensed";
+            font-size: 15.4px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .cartRuppesIcon {
+            width: 12px;
+            height: 18px;
+        }
+
+
+
+    }
+
+    .cartSecDiv {
+        padding: 26px;
+        border-radius: 10px;
+        border: 0.5px solid var(--Line, #D9D9D9);
+        background: var(--Dark-bg, #FFF);
+        margin-left: 10px;
+
+        .orderSummaryText {
+            color: var(--Text-Primary, #282828);
+            text-align: center;
+            font-family: "Barlow Condensed";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .cartrenownedDiv {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 0.5px solid var(--Line, #D9D9D9);
+            padding: 16px 26px;
+        }
+
+        .cartrenownedDivActive {
+            @extend .cartrenownedDiv;
+            border: 0.5px solid var(--Primary, #0078BF);
+            background: var(--Tabs, rgba(74, 188, 255, 0.10));
+        }
+
+
+        .cartrenownedText {
+            color: var(--Secondary-lighter, #939393);
+            font-family: "Barlow Condensed";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .cartrenownedTextActive {
+            @extend .cartrenownedText;
+            color: #0078BF;
+        }
+
+        .orderSummarySectionHeading {
+            color: var(--Text-Primary, #282828);
+            font-family: "Barlow Condensed";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .ordersummaryPriceSection {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .orderSummaryPriceText {
+            color: var(--Secondary-lighter, #939393);
+            font-family: "Barlow Condensed";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .orderSummaryDiscountText {
+            @extend .orderSummaryPriceText;
+            color: var(--Red-Highlight, #E31837);
+
+        }
+
+        .orderSummarySaveOrderText {
+            color: var(--Primary, #0078BF);
+            font-family: "Barlow Condensed";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .buynowbtn {
+            display: flex;
+            height: 46px;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            border: none;
+            gap: 26px;
+            align-self: stretch;
+            color: var(--Dark-bg, #FFF);
+            font-family: "Barlow Condensed";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            width: 100%;
+        }
+
+    }
+
+    .applyCoupensDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .applyCoupensDivHeading {
+        color: var(--Primary, #0078BF);
+        font-family: "Barlow Condensed";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .applyCoupensBtnDiv {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+        justify-content: space-between;
+    }
+
+    .applyCoupensBtnDivInput {
+        width: 100%;
+        height: 46px;
+
+    }
+
+    .applyCoupensBtn {
+        color: var(--Dark-bg, #FFF);
+        font-family: "Barlow Condensed";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        width: 88px;
+        height: 46px;
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--Primary, #0078BF);
+        border: none
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .cartDiv {
+        gap: 16px;
+
+        .cartFirstDiv {
+            padding: 16px;
+            border: none;
+
+            .cartItemsDiv {}
+
+            .cartImgDiv {
+                width: 172.8px;
+                height: 120.6px;
+            }
+
+            .cartItemsFirstDiv {
+                gap: 16px
+            }
+
+            .cartCountInnerDiv {
+                width: auto;
+            }
+
+            .cartCountDiv {
+                padding: 0px 6px;
+                gap: 10px;
+
+            }
+
+            .cartCount {
+                font-size: 18px;
+            }
+
+            .cartProductTitle {
+                font-size: 18px;
+            }
+        }
+
+        .cartSecDiv {
+            margin-left: 0;
+            border: none;
+            padding: 0px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1195px) and (min-width: 992px) {
+    .cartDiv {
+        .cartFirstDiv {
+
+            .cartImgDiv {
+                width: 120.8px;
+                height: 90.6px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:358px) {
+    .cartDiv {
+        .cartFirstDiv {
+            padding: 16px;
+
+            .cartItemsDiv {}
+
+            .cartImgDiv {
+                width: 120.8px;
+                height: 90.6px;
+            }
+
+            .cartItemsFirstDiv {
+                gap: 12px
+            }
+        }
+    }
+}

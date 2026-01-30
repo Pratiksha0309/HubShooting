@@ -1,0 +1,458 @@
+.mainHeading {
+    font-family: "Barlow Condensed";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    /* 138.462% */
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.featuredMainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 46px;
+    align-self: stretch;
+}
+
+.featuredbtnDiv {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.featuredbtnText {
+    color: #5B5B5B;
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    background-color: white;
+}
+
+.featuredSliderTextDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 23px;
+    padding-left: 26px;
+    padding-bottom: 28px;
+}
+
+.featuredSliderHeading {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.featuredPrice {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.featuredDiscountPrice {
+    font-size: 16px;
+    color: var(--Field, #939393);
+    text-decoration-line: line-through;
+
+}
+
+.activefeaturedbtnText {
+    @extend .featuredbtnText;
+    color: black;
+    border-bottom: 2px solid #5B5B5B;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.featuredImageDiv {
+    position: relative;
+    height: 120px;
+    width: 242px;
+
+}
+
+.featuredVectorImage {
+    position: absolute;
+}
+
+.featuredGunImage {
+    position: absolute;
+    z-index: 20;
+    left: 18px;
+}
+
+.viewAllBtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    color: var(--Line, #D9D9D9);
+
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+
+}
+
+.viewAllBtnInnerDiv {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.viewAllBtnArrow {
+    width: 17px;
+    height: 17px;
+    aspect-ratio: 1/1;
+}
+
+.shopCategoryDiv {
+    height: 330px;
+    background-image: linear-gradient(295deg, rgba(0, 0, 0, 1)0%, rgba(113, 156, 209, 1) 50%, rgba(218, 241, 255, 1) 1000%);
+
+    position: relative;
+}
+
+.shopCategoryMainDIv {
+    display: flex;
+    flex-direction: column;
+    gap: 46px
+}
+
+.vectorImage {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    object-fit: contain;
+}
+
+.gunImage {
+    position: absolute;
+    z-index: 2;
+}
+
+.shopCategoryHeding {
+    color: var(--Dark-bg, #FFF);
+
+    font-family: "Barlow Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 200px;
+    padding-left: 20px;
+}
+
+.shopCategorySubHeding {
+    color: var(--Dark-bg, #FFF);
+
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    position: absolute;
+    top: 240px;
+    padding-left: 20px;
+}
+
+.arrowImg {
+    position: absolute;
+    top: 280px;
+    padding-left: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 8px;
+    border-radius: 6px;
+    background: var(--Line, #D9D9D9);
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: linear-gradient(90deg, #719CD1 0%, #3A506B 100%);
+    border-radius: 99px;
+    width: 15px;
+}
+
+.swiper1 {
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.swiper-pagination {
+    bottom: 0px !important;
+    position: absolute;
+}
+
+.expertGunMainDiv {
+    width: 100%;
+    // height: 561px;
+}
+
+.arrowPrev {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    border-radius: 21.6px;
+    background: var(--Line, #D9D9D9);
+    border: none;
+    padding: 21.6px 9.6px;
+
+}
+
+.feacturesAccesoriesMainDiv {
+    background: linear-gradient(281deg, #3A506B -5.66%, #1C2541 49.45%, #0B132B 104.56%);
+    padding: 30px;
+
+    .feacturesAccesoriesText {
+        @extend .mainHeading;
+        color: #FFF;
+    }
+
+    .feacturesAccesoriesProductDiv {
+        background-color: #FFF;
+        display: flex;
+        width: 250px;
+        padding: 26px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .feacturesAccesoriesSwiper {
+        padding-bottom: 45px;
+        width: 100%;
+    }
+
+}
+
+.expertGunFirstDiv {
+    display: flex;
+    padding: 98px 39px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F5F9;
+
+    .expertGunFirstDiv1 {
+        display: flex;
+        padding: 8px 16px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0 0;
+        border-radius: 10px;
+        border: 0.5px solid var(--Line, #D9D9D9);
+    }
+
+
+    .expertGunFirstDivValues {
+        color: #0078BF;
+        font-family: "Barlow Condensed";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+    }
+
+    .expertGunImage {
+        height: 142.458px;
+
+    }
+
+    .expertGunFirstDivText {
+        color: #3A506B;
+        text-align: center;
+        font-family: "Barlow Condensed";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .expertGunswiper {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+}
+
+.expertGunSecDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background: linear-gradient(281deg, #3A506B -5.66%, #1C2541 49.45%, #0B132B 104.56%);
+    padding: 106px 93px;
+    gap: 46px;
+}
+
+.expertGunSecDiv1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.expertGunSecDivHeading1 {
+    color: #FFF;
+    font-family: "Barlow Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.expertGunSecDivHeading2 {
+    background: linear-gradient(90deg, #0078BF 0%, #98C0E6 50%, #C0E4FB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Barlow Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.expertSecDivDisc {
+    color: var(--Dark-bg, #FFF);
+
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 75%;
+}
+
+.expertSecDivBtn {
+    display: flex;
+    padding: 5.409px 10.818px;
+    justify-content: center;
+    align-items: center;
+    gap: 5.409px;
+    background: #FFF;
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    border: none;
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+    .viewAllBtn {
+        display: none;
+    }
+
+    .featuredbtnDiv {
+        gap: 15px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .featuredMainDiv {
+        gap: 5px;
+    }
+
+    .shopCategoryMainDIv {
+        gap: 10px
+    }
+
+    .expertGunFirstDiv {
+        .expertGunFirstDiv {
+            padding: 5px;
+        }
+
+        .expertGunFirstDivValues {
+            font-size: 17px;
+        }
+
+        .expertGunFirstDivText {
+            font-size: 13px;
+        }
+
+        .expertGunImage {
+            width: 347.208px;
+            height: 80px;
+            flex-shrink: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    .expertGunSecDiv {
+        padding: 58px 80px;
+
+    }
+
+    .expertGunSecDivHeading1,
+    .expertGunSecDivHeading2 {
+        font-size: 25px;
+    }
+
+    .expertSecDivDisc {
+        width: 100%;
+    }
+
+    .feacturesAccesoriesMainDiv {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 467px) {
+
+    .expertGunSecDiv {
+        padding: 36px 35px;
+    }
+
+    .feacturesAccesoriesMainDiv {
+        padding: 30px 5px;
+    }
+}
+
+.feacturesAccesoriesText {
+    padding-bottom: 20px;
+}
+
+
+@media (min-width: 790px) and (max-width: 1224px) {}

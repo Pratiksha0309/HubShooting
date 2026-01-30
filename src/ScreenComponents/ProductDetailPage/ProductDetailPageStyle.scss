@@ -1,0 +1,295 @@
+.productDetailDiv {
+    margin-top: 26px;
+}
+
+.bigImageSection {
+    height: 428px;
+    border: 0.5px solid var(--Line, #D9D9D9);
+    box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.06);
+    width: 100%;
+}
+
+.smallImgSectionDiv {
+    display: flex;
+    gap: 26px;
+    margin-top: 26px;
+
+}
+
+.smallImgSection {
+    width: 100%;
+    height: 122px;
+    background: rgba(244, 245, 249, 0.6);
+    cursor: pointer;
+}
+
+.productTitle {
+    color: var(--Primary, #0078BF);
+    font-family: "Barlow Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.productInfoMainDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.productInfopriceDiv {
+    display: flex;
+    padding: 16px 30px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid var(--Primary, #0078BF);
+}
+
+.productInfopriceDiv1 {
+    @extend .productInfopriceDiv;
+    border: 0.5px solid var(--Secondary-lighter, #939393);
+}
+
+.productInfopriceText {
+    color: var(--Secondary-lighter, #939393);
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.productInfoprice {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.productInfopriceGst {
+    @extend .productInfoprice;
+    font-size: 16px;
+}
+
+.productInfopriceInnerDiv {
+    display: flex;
+    gap: 5px;
+    align-items: end;
+}
+
+.productInfoRuppesIcon {
+    width: 12px;
+    height: 23px;
+}
+
+.productInfoDesc {
+    color: var(--Secondary-lighter, #939393);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.quntityDiv {
+    .quntityText {
+        color: var(--Text-Primary, #282828);
+        font-family: "Barlow Condensed";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .quntityFirstDiv {
+        display: flex;
+        padding: 6px 10px;
+        align-items: center;
+        gap: 26px;
+        align-self: stretch;
+        margin-top: 10px;
+    }
+
+    .quntityInnerDiv {
+        display: flex;
+        padding: 9px 10px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 26px;
+        align-self: stretch;
+        border: 0.5px solid var(--Secondary-lighter, #939393);
+    }
+
+    .quntityDivCountValue {
+        color: var(--Text-Primary, #282828);
+        font-family: "Barlow Condensed";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .addToCartBtn {
+        display: flex;
+        width: 255px;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 26px;
+        color: var(--Dark-bg, #FFF);
+        border: none;
+        font-family: "Barlow Condensed";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background-color: black;
+    }
+
+
+}
+
+.productInfoSecDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.productInfoSecDivTitle {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.productInfoSecDivDesc {
+    color: var(--Secondary-lighter, #939393);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.productChkDiv{
+
+    gap: 26px;
+}
+
+.productTab {
+    margin-bottom: 26px;
+}
+
+.nav-tabs .nav-link {
+    color: var(--Secondary, #5B5B5B);
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #000;
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.nav-tabs .nav-link:hover {
+    border: transpanrent;
+}
+
+.navTabsDesc {
+    color: var(--Secondary, #5B5B5B);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.similarProductDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 990px) {
+    .bigImageSection {
+        height: 235px;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .smallImgSection {
+        height: 73.2px;
+        width: 100%;
+    }
+
+    .productInfoMainDiv {
+        gap: 16px
+    }
+
+    .productTitle {
+        font-size: 26px;
+        margin-top: 26px;
+    }
+
+
+    .productInfopriceDiv {
+        padding: 10px 16px;
+    }
+
+    .productInfopriceText {
+        font-size: 18px;
+    }
+
+    .productInfoDesc {
+        font-size: 16px;
+    }
+
+    .quntityDiv {
+        .quntityFirstDiv {
+            gap: 16px
+        }
+
+        .quntityInnerDiv {
+            gap: 16px;
+            padding: 6px 10px;
+
+        }
+
+        .quntityDivCountValue {
+            font-size: 18px;
+
+        }
+
+        .addToCartBtn {
+            font-size: 16px;
+        }
+    }
+
+    .similarProductDiv {
+        gap: 10px;
+        margin-bottom: 26px;
+
+    }
+
+}

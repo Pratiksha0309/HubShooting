@@ -1,0 +1,454 @@
+.brandMainHeading {
+    font-family: "Barlow Condensed";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.brandsMainDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.brandsDiv {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+.brandsDiv:hover {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+.brandsDivText {
+    text-align: center;
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sportsMaindiv {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.newsSectionMainDiv {
+    background: linear-gradient(281deg, #000 -5.66%, #1C2541 49.45%);
+
+    .newsfirstText {
+        color: #FFF;
+        font-family: "Barlow Condensed";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .newsSecondText {
+        color: #FFF;
+        font-family: "Barlow Condensed";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .newsSliderDiv {
+        gap: 116px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsSecondDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    .newsHighlightedText {
+        color: #E31837;
+        font-family: "Barlow Condensed";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .newsImg {
+        display: flex;
+        align-items: center;
+        height: 300px;
+        margin-top: 15px;
+    }
+
+    .newsHeadingText {
+        color: #FFF;
+        font-family: "Barlow Condensed";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+    }
+
+    .newsDesc {
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+
+    }
+
+    .newsBtn {
+        display: flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #E31837;
+        color: #FFF;
+        font-family: "Barlow Condensed";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        border: none;
+    }
+}
+
+.googlePlayMainDiv {
+    .googlePlayFirstDiv {
+        height: 500px;
+        padding-left: 150px;
+
+    }
+
+    .googlePlayMainText {
+
+        font-family: "Barlow Condensed";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .googleplayDesc {
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .googleplayLogo {
+        width: 25.2px;
+        height: 28.8px;
+    }
+
+    .googleplaybtn {
+        display: flex;
+        padding: 6px 12px 8.4px 9.6px;
+        justify-content: center;
+        align-items: flex-end;
+        width: 150px;
+        gap: 8.4px;
+        border-radius: 7.2px;
+        border: 1.2px solid #A6A6A6;
+        background: var(--Text-Primary, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #282828);
+
+        .googleplaybtnFirstText {
+            color: #FFF;
+            font-family: "Product Sans";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .googleplaybtnSecondText {
+            @extend .googleplaybtnFirstText;
+            font-size: 14px;
+            color: #FFF;
+
+        }
+    }
+
+    .googlePlaySecDiv {
+        background: linear-gradient(253deg, #0B132B 27.63%, #1C2541 45.02%, #3A506B 62.4%);
+        height: 500px;
+
+    }
+}
+
+.waltherGunMainDiv {
+    height: 600px;
+    background: linear-gradient(281deg, #000 -5.66%, #1C2541 49.45%);
+    position: relative;
+    padding: 40px;
+
+    .waltherGunFirstDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        text-align: start;
+        right: 40px;
+        bottom: 200px;
+        gap: 20px;
+    }
+
+    .waltherGunImg {
+        width: 80%;
+    }
+
+    .waltherGunText {
+        color: #FFF;
+        font-family: "Barlow Condensed";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .waltherDesc {
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+
+    }
+
+    .waltherGunBtn {
+        display: flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #E31837;
+        color: var(--Dark-bg, #FFF);
+        font-family: "Barlow Condensed";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        border: none;
+        margin-top: 20px;
+    }
+
+    .WaltherGunSliderDiv {
+        margin-top: 40px;
+    }
+
+    .walterGunSwiper {
+        padding-bottom: 30px;
+        overflow: visible;
+
+
+    }
+
+    .waltharSliderTextDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 23px;
+        padding-left: 26px;
+    }
+
+    .walterswipermainDiv {
+        background: #FFF;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.10);
+    }
+}
+
+.blogsMainDiv {
+    margin-top:200px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+
+.blogsText {
+
+    font-family: "Barlow Condensed";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.blogsSwiperText {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+
+.blogsTextDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 53.5px;
+    margin-top: 23px;
+    padding-left: 26px;
+    padding-bottom: 28px;
+}
+
+.blogsReadmoreText {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blogsSwiper {
+    padding-bottom: 60px;
+}
+
+.videoSectionMainDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.videoText {
+    font-family: "Barlow Condensed";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.78px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 990px) {
+    .newsSectionMainDiv {
+        .newsSecondDiv {
+            gap: 8px;
+        }
+
+        .newsBtn {
+            margin-top: 27px;
+        }
+    }
+
+    .brandsMainDiv {
+        gap: 10px
+    }
+
+    .blogsTextDiv {
+        padding-left: 5px;
+    }
+
+    .videoSectionMainDiv {
+        gap: 10px
+    }
+
+    .blogsMainDiv {
+        gap: 10px;
+    }
+
+    .sportsMaindiv {
+        gap: 10px;
+    }
+
+    .googlePlayMainDiv {
+        .googlePlayFirstDiv {
+            padding: 10px;
+            height: auto;
+        }
+
+        .googlePlaySecDiv {
+            border-radius: 0%;
+        }
+
+        .googleplaybtn {
+            .googleplaybtnFirstText {
+                font-size: 8px;
+            }
+
+            .googleplaybtnSecondText {
+                font-size: 10px;
+            }
+
+            .googleplayLogo {
+                width: 22.2px;
+                height: 25.8px;
+            }
+        }
+    }
+
+    .waltherGunMainDiv {
+        padding: 10px;
+
+        .waltherGunFirstDiv {
+            right: 0;
+            bottom: 150px;
+            left: 5px;
+            align-items: start;
+        }
+
+        .WaltherGunSliderDiv {
+            margin-top: 150px;
+        }
+
+        .waltherGunImg {
+            width: 80%;
+        }
+
+        .waltherGunText {
+            font-size: 20px;
+        }
+
+        .waltherDesc {
+            font-size: 15px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .waltherGunMainDiv {
+        .waltherGunFirstDiv {
+            bottom: 300px;
+        }
+
+        .WaltherGunSliderDiv {
+            margin-top: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 756px) and (max-width: 998px) {
+    .blogsMainDiv {
+        margin-top: 150px;
+    }
+}

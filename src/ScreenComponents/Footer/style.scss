@@ -1,0 +1,149 @@
+.headings {
+    color: var(--Dark-bg, #FFF);
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.footerfirstDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subHeadings {
+    color: var(--Field, #939393);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 185.714% */
+}
+
+.subHeadings1 {
+    @extend .subHeadings;
+    font-size: 15px;
+}
+
+.contactNoText {
+    color: var(--Dark-bg, #FFF);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.contactNoText1 {
+    @extend .contactNoText;
+    font-size: 15px;
+}
+
+.signUpBtn {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #FFF;
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+}
+
+.emailInput {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border: 0.5px solid #FFF;
+    background: linear-gradient(286deg, #00071B -7.02%, #031036 49.39%, #01103F 105.81%);
+color: var(--Dark-bg, #FFF);
+font-family: Oswald;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.footerDiv {
+    background: linear-gradient(286deg, #00071B -7.02%, #031036 49.39%, #01103F 105.81%);
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footerTitle {
+    color: var(--Dark-bg, #FFF);
+    font-family: "Barlow Condensed";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerSubtitle {
+    color: var(--Dark-bg, #FFF);
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.links {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 80.25px;
+    height: 62.284px;
+    aspect-ratio: 80.25/62.28;
+}
+.accordion-header , .accordion-body{
+    background: linear-gradient(286deg, #00071B -7.02%, #031036 49.39%, #01103F 105.81%);
+    color: white;
+}
+
+@media screen and (max-width: 990px) {
+    .footerDiv {
+        padding: 10px, 10px;
+    }
+
+    .logo {
+        height: 50.05px;
+    }
+
+    .footerTitle {
+        font-size: 22px;
+    }
+
+    .footerSubtitle {
+        font-size: 18px;
+    }
+
+    .headings {
+        font-size: 18px;
+    }
+    .emailInput{
+        padding: 7px;
+    }
+    .signUpBtn{
+        padding: 7px 20px;
+    }
+}

@@ -1,0 +1,75 @@
+.productCardMainDiv {
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.06);
+
+    .productCardImgDiv {
+        position: relative;
+
+    }
+
+    .vectorImg {
+        padding-top: 29px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .gunImage {
+        position: absolute;
+        object-position: center;
+        bottom: -14%;
+        aspect-ratio: 1.70;
+        left: 0px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .productcardSecondDiv {
+        margin-top: 19px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding-left: 26px;
+        padding-bottom: 26px;
+    }
+
+    .productCardHeading {
+        color: var(--Text-Primary, #282828);
+        font-family: "Barlow Condensed";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-top: 19px;
+    }
+
+    .productCardMainPrice {
+        color: var(--Field, #939393);
+        font-family: "Barlow Condensed";
+        font-size: 15.4px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration-line: line-through;
+    }
+
+    .productCardDiscountPrice {
+        color: var(--Text-Primary, #282828);
+
+        font-family: "Barlow Condensed";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}
+
+
+@media screen and (max-width: 990px) {
+    .productCardMainDiv {
+        .productcardSecondDiv {
+            padding-left: 5px;
+        }
+    }
+
+}

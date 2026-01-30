@@ -1,0 +1,135 @@
+.billingFormFirstDiv {
+    display: flex;
+    gap: 26px;
+    flex-direction: column;
+    padding: 26px 46px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 0.5px solid var(--Line, #D9D9D9);
+    background: var(--Dark-bg, #FFF);
+}
+
+.billing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.billing-form-two-field {
+    display: flex;
+    gap: 26px;
+    width: 100%;
+}
+
+.billing-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+
+}
+
+.billing-form-Input {
+    height: 35px;
+    width: 100%;
+}
+
+.billing-form-Label {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.billing-form-btn-div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.billing-form-address-div {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.address-type-options {
+    display: flex;
+    gap: 16px;
+}
+
+.address-type-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.biiling-save-btn {
+    display: flex;
+    width: 150px;
+    height: 46px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    color: var(--Dark-bg, #FFF);
+    font-family: "Barlow Condensed";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: var(--Primary, #0078BF);
+    border: none
+}
+
+.biiling-cancel-btn {
+    @extend .biiling-save-btn;
+    border: 1px solid var(--Primary, #0078BF);
+    background: var(--Dark-bg, #FFF);
+    color: var(--Primary, #0078BF);
+}
+
+.billing-error-text {
+    color: var(--Red-Highlight, #E31837);
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+
+}
+
+.shippingFirstDiv {
+    display: flex;
+    width: 379px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.shippingFirstDivText {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.shippingFirstChktext {
+    color: var(--Secondary-lighter, #939393);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 990px) {}

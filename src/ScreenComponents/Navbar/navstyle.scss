@@ -1,0 +1,294 @@
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.mainNavDiv {
+    display: flex;
+    padding: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.16);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+
+    .logo {
+        width: 67px;
+        height: 52px;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+    .navSecondDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 26px;
+        align-self: stretch;
+    }
+
+    .navthirdDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+    }
+
+    .customDropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        align-self: stretch;
+        font-family: "Barlow Condensed";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .settingMainDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        .settingImage {
+            width: 24px;
+            height: 24px;
+        }
+
+        .settingText {
+            font-family: "Barlow Condensed";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+
+    .searchDiv {
+        display: flex;
+        width: 250px;
+        padding: 10px;
+        justify-content: space-between;
+        gap: 2px;
+        align-items: center;
+        border-radius: 10px;
+        border: 0.5px solid var(--Text-Primary, #282828);
+    }
+
+    .searchInput {
+        font-family: Oswald;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        color: #282828;
+        outline: none;
+    }
+
+    .iconsDiv {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .icons {
+        width: 24px;
+        height: 24px;
+        aspect-ratio: 1/1;
+    }
+
+    .offcanvasHeading {
+        color: #FFF;
+        font-family: "Barlow Condensed";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .offCanvasSubHeading {
+        color: rgba(255, 255, 255, 0.80);
+        font-family: "Barlow Condensed";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .offcanvas-header .btn-close {
+        color: #FFF;
+    }
+
+    .offcanvasCollapsebtn {
+        display: flex;
+        padding: 16px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        border-radius: 10px;
+        border: 0.3px solid rgba(255, 255, 255, 0.30);
+        background: rgba(113, 156, 209, 0.15);
+        color: #F5F5F5;
+        font-family: "Barlow Condensed";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .needHelpDiv {
+        display: flex;
+        flex-direction: column;
+        padding: 18px 16px 27px 16px;
+        justify-content: start;
+        align-items: start;
+        align-self: stretch;
+        border-radius: 16px;
+        border: 1.18px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .needHelpHeading {
+        color: #F5F5F5;
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .needHelpContactNo {
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .copyrightScetion {
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        background: #719CD1;
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    .copyrightText {
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .offcanvaHeader {
+        display: flex;
+        height: 50px;
+        align-items: flex-start;
+        gap: 24px;
+        flex: 1 0 0;
+    }
+
+    .offcanvaslogo {
+        height: 50.05px;
+
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .mainNavDiv {
+        padding: 15px 10px;
+
+        .logo {
+            width: 49px;
+            height: 38px;
+        }
+
+        .menuIcon {
+            display: block;
+            width: 28px;
+            height: 28px;
+            aspect-ratio: 1/1;
+        }
+
+
+        .navSecondDiv {
+            display: none;
+        }
+
+        .searchDiv {
+            display: none;
+        }
+
+        .settingMainDiv {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 994px) and (max-width: 1224px) {
+    .mainNavDiv {
+        padding: 15px 30px;
+
+        .logo {
+            width: 49px;
+            height: 38px;
+        }
+
+        .navSecondDiv {
+            gap: 8px;
+        }
+
+        .customDropdown {
+            gap: 2px;
+            font-size: 15px;
+        }
+
+        .settingMainDiv {
+            gap: 3px;
+
+            .settingText {
+                font-size: 15px;
+            }
+
+            .settingImage {
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+
+        .searchDiv {
+            width: 200px;
+            padding: 4px;
+        }
+
+        .searchInput {
+            font-size: 14px;
+        }
+
+        .icons {
+            width: 20px;
+            height: 20px;
+        }
+
+        .navthirdDiv {
+            gap: 15px;
+        }
+    }
+}

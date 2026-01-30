@@ -1,0 +1,247 @@
+.breadCrupmpsDiv {
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+.breadCrumpsText {
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.breadcrumb-item a {
+    @extend .breadCrumpsText;
+    color: #282828;
+    text-decoration: none;
+
+}
+
+.breadcrumb-item.active {
+    @extend .breadCrumpsText;
+    color: #0078BF;
+}
+
+.productGrid {
+    margin-bottom: 26px;
+
+}
+
+.filtersSticky {
+    width: fit-content;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.productPageMainHeading {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.productsCount {
+    color: var(--Secondary, #5B5B5B);
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin-bottom: 26px;
+}
+
+.mobileFiltersDiv {
+    display: none;
+    border: 0.5px solid var(--Line, #D9D9D9);
+    background: rgba(217, 217, 217, 0.30);
+    padding: 11px 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.mobileFiltersDiv1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+.mobileFiltersDiv2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px
+}
+
+.sortText {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.customDropdownFilters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #f4f5f9 !important;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.show {
+        background-color: #f4f5f9 !important;
+        box-shadow: none;
+    }
+
+}
+
+.dropdownText {
+    color: var(--Primary, #0078BF);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.productpageOffcanvasHeader {
+    color: #0078BF;
+    font-family: "Barlow Condensed";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.productOffcanvasBtnDiv {
+    display: flex;
+    padding: 26px 5px 40px 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index: 111;
+    background-color: #fff;
+}
+
+.productOffcanvasBtn1 {
+    display: flex;
+    width: 170px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #0078BF;
+    color: white;
+    border: none;
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.productOffcanvasBtn2 {
+    @extend .productOffcanvasBtn1;
+    background: #fff;
+    color: black;
+    border: 0.5px solid var(--Text-Primary, #282828);
+
+}
+
+.productResetText {
+    color: var(--Primary, #0078BF);
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rbCustomDropdown {
+    .rbDropdownToggle {
+        display: flex;
+        width: 140px;
+        padding: 5px 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        background: #fff;
+        border: 0.5px solid var(--Field, #939393);
+        border-radius: 10px;
+        box-shadow: none;
+        color: var(--Text-Primary, #282828);
+        font-family: "Barlow Condensed";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+
+        &:focus,
+        &:active,
+        &::after {
+            box-shadow: none !important;
+            outline: none !important;
+            border-color: #ccc;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .rbDropdownMenu {
+        width: 140px;
+        padding: 0;
+    }
+}
+
+.sortText1 {
+    color: var(--Text-Primary, #282828);
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.resetbtnmainDiv {
+    display: flex;
+    align-items: center;
+    gap: 26px
+}
+
+.sortDropdownText {}
+
+
+
+@media screen and (max-width: 990px) {
+    .filtersSticky {
+        display: none;
+    }
+
+    .mobileFiltersDiv {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .resetbtnmainDiv {
+        display: none;
+    }
+    .productPageMainHeading ,.productsCount{
+        display: none;
+    }
+}
