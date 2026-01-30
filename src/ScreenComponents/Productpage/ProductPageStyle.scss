@@ -221,11 +221,9 @@
 .resetbtnmainDiv {
     display: flex;
     align-items: center;
-    gap: 26px
+    gap: 26px;
+    margin-bottom: 26px;
 }
-
-.sortDropdownText {}
-
 
 
 @media screen and (max-width: 990px) {
@@ -241,7 +239,9 @@
     .resetbtnmainDiv {
         display: none;
     }
-    .productPageMainHeading ,.productsCount{
+
+    .productPageMainHeading,
+    .productsCount {
         display: none;
     }
 }

@@ -48,7 +48,7 @@ const Footer = () => {
         <div className='footerDiv mt-5'>
             <div className=''>
                 <div className='row d-flex justify-content-between '>
-                    <div className='col-lg-3 col-md-6 col-12 mb-lg-0 mb-3 text-white'>
+                    <div className='col-lg-4 col-12 mb-lg-0 mb-3 text-white'>
                         <div className='footerfirstDiv'>
                             <div className='d-flex gap-lg-5 gap-2'>
                                 <img src={logo} className='logo' />
@@ -84,7 +84,9 @@ const Footer = () => {
                            </div>
                         </div>
                     </div>
-                    <div className='col-lg-3  col-md-6 col-12'>
+                   <div className='col-lg-8 col-12'>
+                  <div className='row'>
+                       <div className='col-lg-4  col-md-4 col-12'>
                         <p className='headings' style={{marginBottom:'30px'}}>Categories</p>
                         {categoryLinks.map((link, index) => (
                             <div key={index}>
@@ -93,7 +95,7 @@ const Footer = () => {
                         ))}
                     </div>
                     
-                    <div className='col-lg-3  col-md-6 col-12'>
+                    <div className='col-lg-4  col-md-4 col-12'>
                         <p className='headings' style={{marginBottom:'30px'}}>Important Links</p>
 
                         {importantLinks.map((link, index) => (
@@ -102,8 +104,8 @@ const Footer = () => {
                             </div>
                         ))}
                     </div>
-                    <div className='col-lg-3  col-md-6 col-12'>
-                        <div className='d-flex flex-column gap-5'>
+                    <div className='col-lg-4 col-md-4 col-12'>
+                        <div className='d-flex flex-column gap-lg-5 gap-3'>
                             <div className='d-flex flex-column '>
                                 <p className='headings' style={{marginBottom:'30px'}}>News Letter</p>
                                 <input className='emailInput' placeholder='Email ID' style={{marginBottom:'20px'}} />
@@ -117,6 +119,8 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                  </div>
+                   </div>
                 </div>
 
                 <div className='row my-md-5 my-3 d-flex justify-content-between'>
