@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../assets/iphone 16 Pro.png'
+import image1 from '../../assets/iphone 16 Pro.png'
 import playstoreImage from '../../assets/Playstore.svg'
 
 const GooglePlaySection = () => {
@@ -36,7 +36,7 @@ const GooglePlaySection = () => {
       </div>
       <div className='col-lg-6 col-12 ' >
         <div className='googlePlaySecDiv '>
-          <img src={image} alt='image1' className='w-100 object-fit-contain h-100' />
+          <img src={image1} alt='image1' className='w-100 object-fit-contain h-100' />
         </div>
       </div>
     </div>
