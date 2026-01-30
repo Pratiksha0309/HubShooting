@@ -25,3 +25,6 @@ dist-ssr
 
 # Windows system folders
 AppData/
+
+.vercel
+.env*.local

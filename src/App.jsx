@@ -3,7 +3,6 @@ import { Routes, BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from './ScreenComponents/HomePage/HomePage';
 import Navbar from './ScreenComponents/Navbar/Navbar';
 import Footer from './ScreenComponents/Footer/Footer';
-import ProductCard from './ScreenComponents/CommonComponent/ProductCard';
 import Productpage from './ScreenComponents/Productpage/Productpage';
 import ProductDetailPage from './ScreenComponents/ProductDetailPage/ProductDetailPage';
 import CartPage from './ScreenComponents/CartPage/CartPage';
