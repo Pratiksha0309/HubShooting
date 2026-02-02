@@ -31,17 +31,30 @@ const BlogSection = () => {
         <Swiper
           modules={[Autoplay, Pagination]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          slidesPerView={'auto'}
+          slidesPerView={4}
           spaceBetween={30}
           loop
           pagination={{
             clickable: true
           }}
           navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
-
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            576: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+          }}
         >
           {banners.map((item, index) => (
-            <SwiperSlide key={index} className='w-auto'  >
+            <SwiperSlide key={index} >
               <div className='walterswipermainDiv '>
                 <div className="swiper-wrapper blogsSwiper">
                   <div className='mt-2 ' style={{ boxShadow: '0 6px 16px 0 rgba(0, 0, 0, 0.06)' }}>
@@ -53,10 +66,10 @@ const BlogSection = () => {
                       />
                     </div>
                     <div className='blogsTextDiv'>
-                     <div>
-                       <div className='featuredSliderHeading '>A Future of Shooting Sports in</div>
-                      <div className='featuredSliderHeading'> India : Aiming for Greatness</div>
-                     </div>
+                      <div>
+                        <div className='featuredSliderHeading '>A Future of Shooting Sports in</div>
+                        <div className='featuredSliderHeading'> India : Aiming for Greatness</div>
+                      </div>
                       <p className='blogsReadmoreText'>Read More</p>
                     </div>
                   </div>

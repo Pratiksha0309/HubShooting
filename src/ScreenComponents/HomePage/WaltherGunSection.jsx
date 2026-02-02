@@ -38,15 +38,29 @@ const WaltherGunSection = () => {
         <Swiper
           modules={[Autoplay, Pagination]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          slidesPerView={'auto'}
+          slidesPerView={4}
           spaceBetween={25}
           loop
           pagination={{
             clickable: true
           }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            576: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+          }}
         >
           {banners.map((item, index) => (
-            <SwiperSlide key={index} className='w-auto  mt-5'  >
+            <SwiperSlide key={index} className='mt-5'>
               <div className='walterswipermainDiv'>
                 <div className="swiper-wrapper walterGunSwiper">
                   <div className='mt-2'>
@@ -58,10 +72,10 @@ const WaltherGunSection = () => {
                       />
                     </div>
                     <div className='waltharSliderTextDiv'>
-                    <p className='featuredSliderHeading mt-3 ps-3'>{item.title}</p>
-                    <p className='featuredDiscountPrice d-flex align-items-center gap-1 ps-3'> <img src={ruppesIcon1} />370010.0</p>
-                    <p className='featuredPrice d-flex align-items-center gap-1 ps-3'><img src={ruppesIcon} />370010.0</p>
-                   </div> </div>
+                      <p className='featuredSliderHeading mt-3 ps-3'>{item.title}</p>
+                      <p className='featuredDiscountPrice d-flex align-items-center gap-1 ps-3'> <img src={ruppesIcon1} />370010.0</p>
+                      <p className='featuredPrice d-flex align-items-center gap-1 ps-3'><img src={ruppesIcon} />370010.0</p>
+                    </div> </div>
                 </div>
               </div>
             </SwiperSlide>

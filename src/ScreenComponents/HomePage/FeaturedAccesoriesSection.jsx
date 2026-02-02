@@ -39,7 +39,7 @@ const FeaturedAccesoriesSection = () => {
                     <Swiper
                         modules={[Autoplay, Pagination]}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
-                        slidesPerView={'auto'}
+                        slidesPerView={4}
                         spaceBetween={10}
                         loop
                         pagination={{
@@ -47,11 +47,25 @@ const FeaturedAccesoriesSection = () => {
                         }}
                         className='container'
                         navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            576: {
+                                slidesPerView: 2,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                            },
+                        }}
                     >
                         {banners.map((item, index) => (
-                            <SwiperSlide key={index} className='w-auto container feacturesAccesoriesSwiper '  >
+                            <SwiperSlide key={index} className='feacturesAccesoriesSwiper swiper-wrapper'  >
                                 <div className='bg-light '>
-                                    <div className="swiper-wrapper ">
+                                    <div className=" ">
                                         <div className='mt-2'>
                                             <div className='feacturesAccesoriesProductDiv'>
                                                 <img

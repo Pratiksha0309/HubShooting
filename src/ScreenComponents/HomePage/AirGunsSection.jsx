@@ -11,6 +11,7 @@ import rightArrow from '../../assets/RightArrow.svg';
 import 'swiper/css/pagination';
 import 'swiper/css'
 import vectorImage from '../../assets/Vector 2.svg'
+import ProductCard from '../CommonComponent/ProductCard'
 
 
 const AirGunsSection = () => {
@@ -39,7 +40,7 @@ const AirGunsSection = () => {
                     <Swiper
                         modules={[Autoplay, Pagination]}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
-                        slidesPerView={'auto'}
+                        slidesPerView={4}
                         spaceBetween={20}
                         loop
                         pagination={{
@@ -47,13 +48,26 @@ const AirGunsSection = () => {
                         }}
                         className='container'
                         navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
-
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            576: {
+                                slidesPerView: 2,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                            },
+                        }}
                     >
                         {banners.map((item, index) => (
-                            <SwiperSlide key={index} className='w-auto container'  >
+                            <SwiperSlide key={index}  >
                                 <div>
                                     <div className="swiper-wrapper swiper1">
-                                        <div className='mt-2 ' style={{boxShadow:'0 6px 16px 0 rgba(0, 0, 0, 0.06)'}}>
+                                        {/* <div className='mt-2 ' style={{boxShadow:'0 6px 16px 0 rgba(0, 0, 0, 0.06)'}}>
                                             <div className='featuredImageDiv'>
                                                 <img src={vectorImage} className='featuredVectorImage w-100 object-fit-cover' />
                                                 <img
@@ -67,7 +81,13 @@ const AirGunsSection = () => {
                                                 <p className='featuredDiscountPrice d-flex align-items-center gap-1'> <img src={ruppesIcon1} />370010.0</p>
                                                 <p className='featuredPrice d-flex align-items-center gap-1'><img src={ruppesIcon} />370010.0</p>
                                             </div>
-                                        </div>
+                                        </div> */}
+                                        <ProductCard
+                                            imgSrc={item.image}
+                                            title={item.title}
+                                            mainPrice={'33500.7'}
+                                            discountPrice={'33400.9'}
+                                        />
                                     </div>
                                     <div className='swiper-pagination'></div>
                                 </div>

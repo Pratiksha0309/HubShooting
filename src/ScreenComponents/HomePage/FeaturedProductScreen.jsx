@@ -12,13 +12,14 @@ import 'swiper/css/pagination';
 import 'swiper/css'
 import vectorImage from '../../assets/Vector 2.svg'
 import { useNavigate } from 'react-router-dom'
+import ProductCard from '../CommonComponent/ProductCard'
 
 
 const FeaturedProductScreen = () => {
     const navigate = useNavigate();
     const swiperRef = useRef(null)
 
-    const handleNavigate = () =>{
+    const handleNavigate = () => {
         navigate('/product')
     }
 
@@ -55,7 +56,7 @@ const FeaturedProductScreen = () => {
                     <Swiper
                         modules={[Autoplay, Pagination]}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
-                        slidesPerView={'auto'}
+                        slidesPerView={4}
                         spaceBetween={20}
                         loop
                         pagination={{
@@ -63,12 +64,27 @@ const FeaturedProductScreen = () => {
                         }}
                         className='container'
                         navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            576: {
+                                slidesPerView: 2,
+
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                            },
+                        }}
                     >
                         {banners.map((item, index) => (
-                            <SwiperSlide key={index} className='w-auto container' >
+                            <SwiperSlide key={index}>
                                 <div>
                                     <div className="swiper-wrapper swiper1"  >
-                                        <div className='mt-2 ' style={{boxShadow:'0 6px 16px 0 rgba(0, 0, 0, 0.06)'}}>
+                                        {/* <div className='mt-2 ' style={{ boxShadow: '0 6px 16px 0 rgba(0, 0, 0, 0.06)' }}>
                                             <div className='featuredImageDiv'>
                                                 <img src={vectorImage} className='featuredVectorImage w-100 object-fit-cover' />
                                                 <img
@@ -82,7 +98,13 @@ const FeaturedProductScreen = () => {
                                                 <p className='featuredDiscountPrice d-flex align-items-center gap-1'> <img src={ruppesIcon1} />370010.0</p>
                                                 <p className='featuredPrice d-flex align-items-center gap-1'><img src={ruppesIcon} />370010.0</p>
                                             </div>
-                                        </div>
+                                        </div> */}
+                                          <ProductCard
+                                            imgSrc={item.image}
+                                            title={item.title}
+                                            mainPrice={'33500.7'}
+                                            discountPrice={'33400.9'}
+                                        />
                                     </div>
                                     <div className='swiper-pagination'></div>
                                 </div>
@@ -91,56 +113,9 @@ const FeaturedProductScreen = () => {
                     </Swiper>
                     <button className="arrow-left arrow arrowPrev d-lg-flex d-none" onClick={() => swiperRef.current?.slidePrev()} style={{ position: 'absolute', top: '50%', zIndex: '999', left: '-50px' }}><img src={leftArrow} /></button>
                     <button className="arrow-right arrow arrowPrev d-lg-flex d-none" onClick={() => swiperRef.current?.slideNext()} style={{ position: 'absolute', top: '50%', zIndex: '999', right: '-50px' }}><img src={rightArrow} /></button>
-                    {/* <Swiper
-                    modules={[Autoplay]}
-                    onSwiper={(swiper) => (swiperRef.current = swiper)}
-                    slidesPerView={4}
-                    autoplay={{
-                        delay: 1800,
-                    }}
-                    watchSlidesProgress={true}
-                    spaceBetween={20}
-                    loop
-                    className='swiper'
-                >
-                    {banners.map((item, index) => (
-                        <SwiperSlide key={index} style={{ width: 'auto' }}>
-                            <div >
-                                <div className="swiper-wrapper">
-                                    <div className=''>
-                                        <img
-                                            src={item.image}
-                                            alt={item.title}
-                                            className='featuredImageSection'
-                                        />
-                                        <p className='featuredSliderHeading'>{item.title}</p>
-                                        <p className='featuredDiscountPrice d-flex align-items-center gap-1'> <img src={ruppesIcon1} />370010.0</p>
-                                        <p className='featuredPrice d-flex align-items-center gap-1'><img src={ruppesIcon} />370010.0</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper> */}
-
-
                 </div>
             </div>
-            {/* <div className='arrowbtnDiv'>
-                        <button
-                            className='arrowbtn'
-                            onClick={() => swiperRef.current?.slidePrev()}
-                        >
-                            <img src={rightArrow} alt='rightArrow'/>
-                        </button>
 
-                        <button
-                            className='arrowbtn'
-                            onClick={() => swiperRef.current?.slideNext()}
-                        >
-                            <img src={leftArrow} alt='leftArrow'/>
-                        </button>
-                </div> */}
         </div >
     )
 }
