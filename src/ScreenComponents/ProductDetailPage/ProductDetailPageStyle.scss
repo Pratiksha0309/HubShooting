@@ -180,7 +180,8 @@
     font-weight: 500;
     line-height: 28px;
 }
-.productChkDiv{
+
+.productChkDiv {
 
     gap: 26px;
 }
@@ -217,6 +218,25 @@
     border: transpanrent;
 }
 
+.productTab.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    margin-bottom: 0;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #000;
+}
+
+.nav-tabs .nav-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
 .navTabsDesc {
     color: var(--Secondary, #5B5B5B);
     font-family: "Barlow Condensed";
@@ -232,8 +252,9 @@
     gap: 26px;
     margin-bottom: 80px;
 }
+
 .custom-swiper-pagination .swiper-pagination {
-  margin-bottom: 26px;
+    margin-bottom: 26px;
 }
 
 @media screen and (max-width: 990px) {
@@ -296,9 +317,10 @@
         margin-bottom: 26px;
 
     }
+
     .custom-swiper-pagination .swiper-pagination {
-  margin-bottom: 16px;
-}
+        margin-bottom: 16px;
+    }
 
 
 }
