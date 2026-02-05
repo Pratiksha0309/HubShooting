@@ -5,7 +5,7 @@ import { Breadcrumb, Dropdown } from 'react-bootstrap'
 import './ProductPageStyle.scss'
 import Filters from './Filters.jsx'
 import sortImage from '../../assets/bx_sort.svg'
-import expandIcon from '../../assets/expand_more.svg'
+import expandIcon from '../../assets/expand_more _gray.svg'
 import filterImage from '../../assets/mage_filter.svg'
 import resetIcon from '../../assets/radix-icons_reset.svg'
 import cancleIcon from '../../assets/codex_cross.svg'
@@ -58,7 +58,7 @@ const Productpage = () => {
                                 className="rbDropdownToggle d-flex align-items-center justify-content-between"
                             >
                                 <span>{selected}</span>
-                                <img src={expandIcon} alt="expand" />
+                                <img src={expandIcon} alt="expand"  style={{height:'24px', width:'24px'}}/>
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu className="rbDropdownMenu">

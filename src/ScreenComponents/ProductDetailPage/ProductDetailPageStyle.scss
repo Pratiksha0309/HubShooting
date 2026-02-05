@@ -7,6 +7,7 @@
     border: 0.5px solid var(--Line, #D9D9D9);
     box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.06);
     width: 100%;
+    padding-bottom: 26px;
 }
 
 .smallImgSectionDiv {
@@ -51,6 +52,7 @@
     @extend .productInfopriceDiv;
     border: 0.5px solid var(--Secondary-lighter, #939393);
 }
+
 
 .productInfopriceText {
     color: var(--Secondary-lighter, #939393);
@@ -107,7 +109,7 @@
 
     .quntityFirstDiv {
         display: flex;
-        padding: 6px 10px;
+        padding: 6px 0px;
         align-items: center;
         gap: 26px;
         align-self: stretch;
@@ -230,6 +232,9 @@
     gap: 26px;
     margin-bottom: 80px;
 }
+.custom-swiper-pagination .swiper-pagination {
+  margin-bottom: 26px;
+}
 
 @media screen and (max-width: 990px) {
     .bigImageSection {
@@ -291,5 +296,9 @@
         margin-bottom: 26px;
 
     }
+    .custom-swiper-pagination .swiper-pagination {
+  margin-bottom: 16px;
+}
+
 
 }

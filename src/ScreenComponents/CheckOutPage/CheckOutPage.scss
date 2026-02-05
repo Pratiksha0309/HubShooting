@@ -301,6 +301,11 @@
     border: none;
     margin-top: 26px;
 }
+.checkOutPadding{
+      padding-left: 26px;
+            padding-right: 26px;
+}
+
 
 @media screen and (max-width: 990px) {
     .checkOutDiv {
@@ -324,4 +329,8 @@
         border: none;
         padding: 0px;
     }
+        .checkOutPadding {
+            padding: 0;
+        }
+
 }

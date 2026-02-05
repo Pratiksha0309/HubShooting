@@ -61,6 +61,20 @@
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
 }
+/* Filters.scss */
+
+.custom-accordion .accordion-button::after {
+  background-image: url('../../assets/expand_more.svg');
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Rotate when expanded */
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
 
 
 .filterSectionPrice {
@@ -101,6 +115,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.ruppesIcon{
+    width: 7.19px;
+height: 10.54px;
 }
 @media screen and (max-width: 990px) {
     .filtersMainDiv{

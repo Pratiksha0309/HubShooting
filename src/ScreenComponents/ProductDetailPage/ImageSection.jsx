@@ -21,17 +21,17 @@ const ImageSection = () => {
     ]
 
     return (
-        <div>
+        <div >
             <Swiper
                 modules={[Autoplay, Pagination, Thumbs]}
                 thumbs={{ swiper: thumbsSwiper }}
                 pagination={{ clickable: true }}
                 spaceBetween={20}
                 loop
-                className="container"
+                className="container custom-swiper-pagination"
             >
                 {banners.map((item, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} >
                         <div className="bigImageSection">
                             <img
                                 src={item.image}

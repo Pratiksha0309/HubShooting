@@ -58,94 +58,94 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className='subHeadings pe-3'>Hub Sports Equipment Pvt Ltd. has its own expertise in constructing and installing many shooting ranges of all events as per International Shooting Sports Federations rules and regulations in almost all parts of country and which are doing well with respect to the infrastructure and its maintenance.</div>
-                            <div className='d-flex gap-2 flex-column d-lg-block d-none'>
-                                <div className='row'>
-                                    <div className='col-2'><img src={phoneIcon} alt='icon' /></div>
-                                    <div className='col-5 subHeadings1'>Customer Care </div>
-                                    <div className='col-5 contactNoText'>: +91 9175986669 </div>
+                            <div className='d-lg-flex flex-column d-none' style={{ gap: '10px' }} >
+                                <div className='d-flex ' style={{ gap: '20px' }}>
+                                    <div className=''><img src={phoneIcon} alt='icon' /></div>
+                                    <div className=' subHeadings1' style={{ width: '110px' }}>Customer Care </div>
+                                    <div className=' contactNoText'>: +91 9175986669 </div>
                                 </div>
-                                <div className='row'>
-                                    <div className='col-2'></div>
-                                    <div className='col-5 subHeadings1'>Sales</div>
-                                    <div className='col-5 contactNoText'>: +91 9175986669 </div>
+                                <div className='d-flex ' style={{ gap: '20px' }}>
+                                    <div style={{ width: '24px' }}></div>
+                                    <div className='subHeadings1' style={{ width: '110px' }}>Sales</div>
+                                    <div className='contactNoText' >: +91 9175986669 </div>
                                 </div>
-                                <div className='row'>
-                                    <div className='col-2'></div>
-                                    <div className='col-5 subHeadings1'>Service </div>
-                                    <div className='col-5 contactNoText'>: +91 9175986669 </div>
+                                <div className='d-flex ' style={{ gap: '20px' }}>
+                                    <div style={{ width: '24px' }}></div>
+                                    <div className=' subHeadings1' style={{ width: '110px' }}>Service </div>
+                                    <div className='contactNoText'>: +91 9175986669 </div>
                                 </div>
                             </div>
-                           <div className='d-lg-flex d-none'>
-                             <div className='row'>
-                                <div className='col-2'><img src={mailIcon} alt='icon' /></div>
-                                <div className='col-3 subHeadings1'>Email                      </div>
-                                <div className='col-4 contactNoText'>hubshootingsports@gmail.com </div>
-                            </div>
-                           </div>
-                        </div>
-                    </div>
-                   <div className='col-lg-8 col-12'>
-                  <div className='row'>
-                       <div className='col-lg-4  col-md-4 col-12'>
-                        <p className='headings' style={{marginBottom:'30px'}}>Categories</p>
-                        {categoryLinks.map((link, index) => (
-                            <div key={index}>
-                                <p className='subHeadings' style={{marginBottom:'12px'}}>    {link.name}</p>
-                            </div>
-                        ))}
-                    </div>
-                    
-                    <div className='col-lg-4  col-md-4 col-12'>
-                        <p className='headings' style={{marginBottom:'30px'}}>Important Links</p>
-
-                        {importantLinks.map((link, index) => (
-                            <div key={index}>
-                                <p className='subHeadings' style={{marginBottom:'12px'}}>    {link.name}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div className='col-lg-4 col-md-4 col-12'>
-                        <div className='d-flex flex-column gap-lg-5 gap-3'>
-                            <div className='d-flex flex-column '>
-                                <p className='headings' style={{marginBottom:'30px'}}>News Letter</p>
-                                <input className='emailInput' placeholder='Email ID' style={{marginBottom:'20px'}} />
-                                <button className='signUpBtn'>Sign Up</button>
-                            </div>
-                            <div className='mt-lg-0 mt-4'>
-                                <p className='headings' style={{marginBottom:'30px'}}>Downloads</p>
-                                <p className='contactNoText1' style={{marginBottom:'10px'}}><img src={downloadIcon} alt='image1' /> Authority Letters For Shooters</p>
-                                <p className='contactNoText1'><img src={downloadIcon} alt='image1' /> Required Documents</p>
-
+                            <div className='d-lg-flex d-none'>
+                                <div className='d-flex ' style={{ gap: '20px' }}>
+                                    <div><img src={mailIcon} alt='icon' /></div>
+                                    <div className=' subHeadings1' style={{ width: '110px' }}>Email                      </div>
+                                    <div className=' contactNoText'>: hubshootingsports@gmail.com </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-                   </div>
+                    <div className='col-lg-8 col-12'>
+                        <div className='row'>
+                            <div className='col-lg-4  col-md-4 col-12'>
+                                <p className='headings' style={{ marginBottom: '30px' }}>Categories</p>
+                                {categoryLinks.map((link, index) => (
+                                    <div key={index}>
+                                        <p className='subHeadings' style={{ marginBottom: '12px' }}>    {link.name}</p>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className='col-lg-4  col-md-4 col-12'>
+                                <p className='headings' style={{ marginBottom: '30px' }}>Important Links</p>
+
+                                {importantLinks.map((link, index) => (
+                                    <div key={index}>
+                                        <p className='subHeadings' style={{ marginBottom: '12px' }}>    {link.name}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className='col-lg-4 col-md-4 col-12'>
+                                <div className='d-flex flex-column gap-lg-5 gap-3'>
+                                    <div className='d-flex flex-column '>
+                                        <p className='headings' style={{ marginBottom: '30px' }}>News Letter</p>
+                                        <input className='emailInput' placeholder='Email ID' style={{ marginBottom: '20px' }} />
+                                        <button className='signUpBtn'>Sign Up</button>
+                                    </div>
+                                    <div className='mt-lg-0 mt-4'>
+                                        <p className='headings' style={{ marginBottom: '30px' }}>Downloads</p>
+                                        <p className='contactNoText1' style={{ marginBottom: '10px' }}><img src={downloadIcon} alt='image1' /> Authority Letters For Shooters</p>
+                                        <p className='contactNoText1'><img src={downloadIcon} alt='image1' /> Required Documents</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className='row my-md-5 my-3 d-flex justify-content-between'>
                     <div className='col-md-4 col-12'>
                         <p className='headings'>Store Location</p>
-                        <p className='subHeadings' style={{marginTop:'16px'}}>Office No. 8th, 3rd Floor, Vision One Park, Bhansali Circuit Rd, Wakad, Pune, Maharashtra 411033 </p>
+                        <p className='subHeadings' style={{ marginTop: '16px' }}>Office No. 8th, 3rd Floor, Vision One Park, Bhansali Circuit Rd, Wakad, Pune, Maharashtra 411033 </p>
                     </div>
 
 
                     <div className='col-md-8 col-12 mt-2 d-md-flex justify-content-end'>
                         <div className='d-flex gap-lg-5 gap-4'>
-                                <div className=''>
-                                    <p className='headings' style={{marginBottom:'16px'}}>Office Hours</p>
-                                    <p className='subHeadings'>Mon - Sat (9AM - 6PM) </p>
-                                    <p className='subHeadings'>Sunday: Closed</p>
-                                </div>
-                                <div className=''>
-                                    <div>
-                                        <p className='headings d-flex align-items-center' style={{marginBottom:'16px'}}><img src={announceMentIcon} alt='annoucemnt' />&nbsp; Follow Us</p>
-                                        <div className='d-flex gap-2'>
-                                            <img src={instalogo} alt='logo' />
-                                            <img src={fblogo} alt='logo' />
-                                        </div>
+                            <div className=''>
+                                <p className='headings' style={{ marginBottom: '16px' }}>Office Hours</p>
+                                <p className='subHeadings'>Mon - Sat (9AM - 6PM) </p>
+                                <p className='subHeadings'>Sunday: Closed</p>
+                            </div>
+                            <div className=''>
+                                <div>
+                                    <p className='headings d-flex align-items-center' style={{ marginBottom: '16px' }}><img src={announceMentIcon} alt='annoucemnt' />&nbsp; Follow Us</p>
+                                    <div className='d-flex gap-2'>
+                                        <img src={instalogo} alt='logo' />
+                                        <img src={fblogo} alt='logo' />
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>

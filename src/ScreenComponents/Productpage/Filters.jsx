@@ -2,6 +2,7 @@ import React , {useState} from 'react'
 import './Filters.scss'
 import { Accordion, Form } from 'react-bootstrap'
 import { Slider } from 'antd';
+import ruppesIcon from '../../assets/fa_rupee.svg'
 
 const Filters = () => {
  const [priceRange, setPriceRange] = useState([500, 500000]);
@@ -51,8 +52,8 @@ const Filters = () => {
               />
 
               <div className='d-flex justify-content-between'>
-                <div className='filterPriceText'>₹{priceRange[0]}</div>
-                <div className='filterPriceText'>₹{priceRange[1]}</div>
+                <div className='filterPriceText text-black d-flex align-items-center ' style={{gap:'2px'}}><img src={ruppesIcon} className='ruppesIcon'/> {priceRange[0]}</div>
+                <div className='filterPriceText text-black  d-flex align-items-center' style={{gap:'2px'}}><img src={ruppesIcon} className='ruppesIcon' /> {priceRange[1]}</div>
               </div>
             </div>
           </Accordion.Body>

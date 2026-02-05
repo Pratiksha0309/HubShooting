@@ -120,7 +120,7 @@ const CheckOutPage = () => {
 
                         <hr className='checkoutHorizontalGap d-lg-block d-none' />
 
-                        <div className='ordersummaryPriceSection'>
+                        <div className='ordersummaryPriceSection checkOutPadding'>
                             <div className='orderSummarySectionHeading d-flex'>PRICE DETAILS &nbsp;<span className='d-lg-flex d-none'>(4 Items)</span> </div>
                             <div className='d-flex justify-content-between align-items-center'>
                                 <div className='orderSummaryPriceText'>Price</div>
@@ -136,7 +136,7 @@ const CheckOutPage = () => {
                             </div>
                         </div>
                         <hr className='cartHorizontalGap' />
-                        <div className='d-flex justify-content-between'>
+                        <div className='d-flex justify-content-between checkOutPadding'>
                             <div className='orderSummarySectionHeading '>TOTAL AMOUNT (4 Items)</div>
                             <div className='orderSummarySectionHeading d-flex align-items-center'><img src={ruppesIcon} /> 370010.0</div>
                         </div>

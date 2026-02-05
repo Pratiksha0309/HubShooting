@@ -41,18 +41,32 @@ const SimilarProducts = () => {
                     <Swiper
                         modules={[Autoplay, Pagination]}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
-                        slidesPerView={'auto'}
-                        spaceBetween={5}
+                        slidesPerView={4}
+                        spaceBetween={20}
                         loop
                         pagination={{
                             clickable: true
                         }}
                         navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
                         className='w-100'
+                         breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            576: {
+                                slidesPerView: 2,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                            },
+                        }}
                     >
                         {banners.map((item, index) => (
 
-                            <SwiperSlide key={index} className='w-auto container'  >
+                            <SwiperSlide key={index}  >
                                 <div>
                                     <div className="swiper-wrapper swiper1">
                                         <ProductCard

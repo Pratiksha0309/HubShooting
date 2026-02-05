@@ -79,7 +79,7 @@ const CartPage = () => {
 
                 <div className='col-lg-5 col-12 '>
                     <div className='cartSecDiv'>
-                        <div className='orderSummaryText d-lg-block d-none'>Order Summary</div>
+                        <div className='orderSummaryText d-lg-block d-none cartSecDivGap'>Order Summary</div>
                         <div className={chkChecked ? 'cartrenownedDivActive' : 'cartrenownedDiv'}>
                             <input
                                 type="checkbox"
@@ -90,7 +90,7 @@ const CartPage = () => {
                             <div className={chkChecked ? 'cartrenownedTextActive' : 'cartrenownedText'}>I am a renowned owner </div>
                         </div>
                         <hr className='cartHorizontalGap' />
-                        <div className='ordersummaryPriceSection'>
+                        <div className='ordersummaryPriceSection cartSecDivGap'>
                             <div className='orderSummarySectionHeading'>PRICE DETAILS (4 Items)</div>
                             <div className='d-flex justify-content-between'>
                                 <div className='orderSummaryPriceText'>Price</div>
@@ -106,12 +106,12 @@ const CartPage = () => {
                             </div>
                         </div>
                         <hr className='cartHorizontalGap' />
-                        <div className='d-flex justify-content-between'>
+                        <div className='d-flex justify-content-between cartSecDivGap'>
                             <div className='orderSummarySectionHeading '>TOTAL AMOUNT (4 Items)</div>
                             <div className='orderSummarySectionHeading d-flex align-items-center'><img src={ruppesIcon} /> 370010.0</div>
                         </div>
-                        <div className='applyCoupensDiv'>
-                            <div className='applyCoupensDivHeading'><img src={couponsIcon} /> &nbsp; Apply Coupons</div>
+                        <div className='applyCoupensDiv cartSecDivGap'>
+                            <div className='applyCoupensDivHeading '><img src={couponsIcon} /> &nbsp; Apply Coupons</div>
                             <div className='applyCoupensBtnDiv'>
                                 <input className='applyCoupensBtnDivInput' />
                                 <button className='applyCoupensBtn'>Apply</button>
@@ -119,11 +119,12 @@ const CartPage = () => {
 
                         </div>
                         <hr className='cartHorizontalGap' />
-                        <div className='orderSummarySaveOrderText'>You will save ₹ 37000.0 on this order.</div>
+                        <div className='orderSummarySaveOrderText cartSecDivGap'>You will save ₹ 37000.0 on this order.</div>
                         <hr className='cartHorizontalGap' />
-                        <button className='buynowbtn' onClick={handleCheckOut}>Buy Now</button>
+                       <button className='buynowbtn ' onClick={handleCheckOut}>Buy Now</button>
+
                     </div>
-                </div>
+                    </div>
             </div>
         </div>
     )
