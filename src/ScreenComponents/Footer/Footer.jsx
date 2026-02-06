@@ -75,15 +75,11 @@ const Footer = () => {
                                     <div className='contactNoText'>: +91 9175986669 </div>
                                 </div>
                             </div>
-                            <div className='d-lg-flex d-none'>
-                                <div className='d-flex ' style={{ gap: '20px' }}>
-                                    <div><img src={mailIcon} alt='icon' /></div>
-                                    <div className=' subHeadings1' style={{ width: '110px' }}>Email                      </div>
-                                    <div className=' contactNoText'>: hubshootingsports@gmail.com </div>
-                                </div>
-                            </div>
+
                         </div>
+
                     </div>
+
                     <div className='col-lg-8 col-12'>
                         <div className='row'>
                             <div className='col-lg-4  col-md-4 col-12'>
@@ -122,7 +118,13 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className='d-lg-flex d-none' style={{marginTop:'20px'}}>
+                    <div className='d-flex ' style={{ gap: '20px' }}>
+                        <div><img src={mailIcon} alt='icon' /></div>
+                        <div className=' subHeadings1' style={{ width: '110px' }}>Email                      </div>
+                        <div className=' contactNoText'>: hubshootingsports@gmail.com </div>
+                    </div>
+                </div>
                 <div className='row my-md-5 my-3 d-flex justify-content-between'>
                     <div className='col-md-4 col-12'>
                         <p className='headings'>Store Location</p>

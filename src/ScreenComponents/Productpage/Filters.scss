@@ -61,7 +61,6 @@
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
 }
-/* Filters.scss */
 
 .custom-accordion .accordion-button::after {
   background-image: url('../../assets/expand_more.svg');
@@ -70,7 +69,6 @@
   height: 24px;
 }
 
-/* Rotate when expanded */
 .custom-accordion .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
 }
